@@ -1,7 +1,7 @@
 import streamlit as st
 from app.database import insert_product, list_produtos_screen, delete_product
 from app.blob_service import upload_image
-
+st.set_page_config(page_title="Cloud E-Commerce Platform")
 st.title("Cloud E-Commerce Platform")
 
 name = st.text_input("Nome do Produto")
