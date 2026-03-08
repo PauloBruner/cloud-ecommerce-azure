@@ -9,7 +9,7 @@ from app.config import *
 
 def get_connection():
     connection_string = f"""
-    DRIVER={{ODBC Driver 18 for SQL Server}};
+    DRIVER={{ODBC Driver 17 for SQL Server}};
     SERVER=tcp:{SQL_SERVER},1433;
     DATABASE={SQL_DATABASE};
     UID={SQL_USER};
