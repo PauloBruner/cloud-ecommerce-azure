@@ -109,7 +109,7 @@ def list_produtos_screen():
 
                 # Imagem
                 if product["imagem_url"]:
-                    st.image(product["imagem_url"], width="stretch")
+                    st.image(product["imagem_url"], use_container_width=True)
 
                 # Nome
                 st.markdown(f"### {product['nome']}")
